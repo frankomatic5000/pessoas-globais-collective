@@ -1,5 +1,6 @@
 import { Search, Menu } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const navLinks = ["Ciência", "Saúde", "Tecnologia", "Pessoas", "Podcast"];
 
@@ -9,10 +10,8 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
-        <a href="/" className="flex items-center gap-2">
-          <span className="font-serif text-2xl font-bold text-foreground tracking-tight">
-            Pessoas <span className="text-primary">Globais</span>
-          </span>
+        <a href="/" className="flex items-center">
+          <img src={logo} alt="Pessoas Globais" className="h-9" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
